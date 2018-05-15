@@ -49,6 +49,7 @@ namespace KimzWpfCommon.Utils
         public void Execute(T1 parameter)
         {
             _function?.Invoke(parameter);
+            _functionWithoutParam?.Invoke();
         }
 
         public void Execute(object parameter)
